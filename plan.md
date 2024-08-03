@@ -14,12 +14,12 @@
     2. Create an app.js file ✅
     3. Install express ✅
     4. Install helmet ✅
-    5. Install the logging tool
-    6. Add a `.gitignore` file with node_modules
+    5. Install the logging tool ✅
+    6. Add a `.gitignore` file with node_modules ✅
 3. Setup backend files for database interactions
-    1. Create an index.js for db interaction
-    2. Install the pg npm package
-    3. Create a reset-database file
+    1. Create an index.js for db interaction ✅
+    2. Install the pg npm package ✅
+    3. Create a reset-database file ✅
 4. Design the front-end (whiteboard)
     1. Header
     2. Input for Course Module
