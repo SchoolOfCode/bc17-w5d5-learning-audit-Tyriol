@@ -10,7 +10,7 @@
 
 <body>
     <div class="container grid">
-        <header>
+        <header class="flex">
             Learning Audit
         </header>
         <main class="grid">
@@ -18,14 +18,14 @@
                 <div class="course-module">
                     <form class="flex" action="" method="post">
                         <label for="course-module">Add a new course Module:</label>
-                        <input type="text" name="course-module" id="course-module">
+                        <input type="text" name="course-module" id="course-module" placeholder="Module name...">
                         <button type="submit">ADD</button>
                     </form>
                 </div>
                 <div class="add-learning">
                     <form class="flex" action="" method="post">
                         <label for="learning">What did I learn?</label>
-                        <input type="text" name="learning" id="learning">
+                        <input type="text" name="learning" id="learning" placeholder="Type here...">
                         <select name="linked-course" id="linked-course">
                             <option value="" disabled selected>In which course?</option>
                             <option value="dummy">dummy</option>
@@ -35,6 +35,8 @@
                             <option value="amber">Amber 🟠</option>
                             <option value="green">Green 🟢</option>
                         </select>
+                        <textarea rows="3" name="learning-notes" id="learning-notes"
+                            placeholder="Thoughts worthy of noting in terms of my learning..."></textarea>
                         <button type="submit">ADD</button>
                     </form>
                 </div>
