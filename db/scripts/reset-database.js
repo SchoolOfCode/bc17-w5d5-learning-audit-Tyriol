@@ -35,15 +35,9 @@ async function resetDatabase() {
 
         // Insert data into the learnings table
         await pool.query(`
-            INSERT INTO learnings (learnings_name, module_id, rag_status, learning_notes)
+            INSERT INTO learnings (learning_name, module_id, rag_status, learning_notes)
             VALUES
-                ('Problem Solving', 1, 'Amber', 'Through various games and challenges like Murdle and Puzzle king'),
-                ('High Performance Routines', 1, 'Green', 'Ensuring you're in the best condition to perform through mindfulness, exercise, sleep, nsdr and having your environment in the right state'),
-                ('Git and Github', 1, 'Green', 'Version control, the difference between git and github and some practice'),
-                ('Computational Thinking', 1, 'Amber', 'How to be methodical, break things down into the simplest possible option and work from there'),
-                ('7 Steps programming', 1, 'Amber', 'Similar to computational thinking, it's about working through a problem methodically'),
-                ('Team Programming', 1, 'Green', 'The value of working together, having others to bounce ideas off of and gain knowledge from'),
-                ('Flow Diagrams', 1, 'Amber', 'A way to visualise and break down problems and user flows'),
+                ('Problem Solving', 1, 'Amber', 'Through various games and challenges like Murdle and Puzzle king')
         `);
 
         console.log("Database reset successful");
@@ -54,5 +48,13 @@ async function resetDatabase() {
         await pool.end();
     }
 }
+
+// ('High Performance Routines', 1, 'Green', 'Ensuring you're in the best condition to perform through mindfulness, exercise, sleep, nsdr and having your environment in the right state'),
+// ('Git and Github', 1, 'Green', 'Version control, the difference between git and github and some practice'),
+// ('Computational Thinking', 1, 'Amber', 'How to be methodical, break things down into the simplest possible option and work from there'),
+// ('7 Steps programming', 1, 'Amber', 'Similar to computational thinking, it's about working through a problem methodically'),
+// ('Team Programming', 1, 'Green', 'The value of working together, having others to bounce ideas off of and gain knowledge from'),
+// ('Flow Diagrams', 1, 'Amber', 'A way to visualise and break down problems and user flows')
+
 
 await resetDatabase();
