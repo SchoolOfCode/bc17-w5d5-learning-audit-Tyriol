@@ -44,3 +44,10 @@
     - Using lucidchart and mermaid ✅
     - copy export to `./db/reset-database.js` ✅
     - upload png of ERD ✅
+9. Create postgres db using Render
+10. Setup logic for the DB scripts
+    - `/db/index.js` setup with to create a pool of connections between db and app
+    - `/db/scripts/reset-database.js` set up with ability to:
+        - Drop tables
+        - Create tables
+        - Initial seed data
