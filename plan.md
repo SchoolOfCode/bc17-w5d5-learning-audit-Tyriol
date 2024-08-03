@@ -36,7 +36,11 @@
 6. Add basic styling
     1. So it's not completely awful, just mildly so... ✅
 7. Create Express app
-    1. Link to express
-    2. Add middleware
-    3. Create empty routes for GET all and POST
-    4. Open up listening port 3001
+    1. Link to express ✅
+    2. Add middleware ✅
+    3. Create empty routes for GET all and POST ✅
+    4. Open up listening port 3001 ✅
+8. Design DB Schema
+    - Using lucidchart and mermaid ✅
+    - copy export to `./db/reset-database.js` ✅
+    - upload png of ERD ✅
