@@ -29,7 +29,14 @@
     4. Display for each course module with it's associated list ✅
     5. BONUS: A way to select 3 to focus on.
 5. Flesh out HTML using following flow:
-    1. User adds a course 
-    2. User adds a learning linked to that course
-    3. User assigns it a RAG value
-    4. User views a list of courses and their learnings
+    1. User adds a course ✅
+    2. User adds a learning linked to that course ✅
+    3. User assigns it a RAG value ✅
+    4. User views a list of courses and their learnings ✅
+6. Add basic styling
+    1. So it's not completely awful, just mildly so... ✅
+7. Create Express app
+    1. Link to express
+    2. Add middleware
+    3. Create empty routes for GET all and POST
+    4. Open up listening port 3001
