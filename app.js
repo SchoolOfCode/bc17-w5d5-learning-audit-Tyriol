@@ -4,6 +4,12 @@ import morgan from "morgan";
 import cors from "cors";
 import helmet from "helmet"
 
+// import helper functions for modules
+// import {
+//     getModules,
+//     createModule
+// } from "./resources/modules.js"
+
 // create app
 const app = express();
 
