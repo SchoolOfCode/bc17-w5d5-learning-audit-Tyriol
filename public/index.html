@@ -4,11 +4,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Learning Audit</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-
+    <div class="container">
+        <header>
+            Learning Audit
+        </header>
+        <main>
+            <section class="content-input">
+                <div class="course-module">
+                    <form action="" method="post">
+                        <label for="course-module">Add a new course Module:</label>
+                        <input type="text" name="course-module" id="course-module">
+                        <button type="submit">ADD</button>
+                    </form>
+                </div>
+                <div class="add-learning">
+                    <form action="" method="post">
+                        <label for="learning">What did I learn?</label>
+                        <input type="text" name="learning" id="learning">
+                        <select name="linked-course" id="linked-course">
+                            <option value="" disabled selected>In which course?</option>
+                            <option value="dummy">dummy</option>
+                        </select>
+                        <select name="rag" id="rag">
+                            <option value="red">Red 🔴</option>
+                            <option value="amber">Amber 🟠</option>
+                            <option value="green">Green 🟢</option>
+                        </select>
+                        <button type="submit">ADD</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="main.js"></script>
 </body>
 
 </html>

@@ -21,10 +21,15 @@
     2. Install the pg npm package ✅
     3. Create a reset-database file ✅
 4. Design the front-end (whiteboard)
-    1. Header
-    2. Input for Course Module
-    3. Input for things we've been asked to learn
-        1. With a way to link it to course Module
-        2. And a way to mark it Red, Amber or Green
-    4. Display for each course module with it's associated list
-    4. BONUS: A way to select 3 to focus on.
+    1. Header ✅
+    2. Input for Course Module ✅
+    3. Input for things we've been asked to learn ✅
+        1. With a way to link it to course Module ✅
+        2. And a way to mark it Red, Amber or Green ✅
+    4. Display for each course module with it's associated list ✅
+    5. BONUS: A way to select 3 to focus on.
+5. Flesh out HTML using following flow:
+    1. User adds a course 
+    2. User adds a learning linked to that course
+    3. User assigns it a RAG value
+    4. User views a list of courses and their learnings
