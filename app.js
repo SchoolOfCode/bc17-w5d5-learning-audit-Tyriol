@@ -5,10 +5,10 @@ import cors from "cors";
 import helmet from "helmet"
 
 // import helper functions for modules
-// import {
-//     getModules,
-//     createModule
-// } from "./resources/modules.js"
+import {
+    getModules,
+    // createModule
+} from "./resources/modules.js"
 
 // create app
 const app = express();
@@ -25,7 +25,8 @@ app.use(express.json())
 
 // get all of a specific resource
 app.get("/api/modules/", async (req, res) => {
-
+    const modules = await getModules();
+    res.status(200).json({ status: "success", payload: modules });
 });
 
 // create a new resource

@@ -52,4 +52,4 @@
         - Create tables ✅
         - Initial seed data ✅
 11. Create helper function file for modules
-    - Get a GET endpoint working
+    - Get a GET endpoint working ✅
