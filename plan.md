@@ -53,3 +53,7 @@
         - Initial seed data ✅
 11. Create helper function file for modules
     - Get a GET endpoint working ✅
+    - Get a POST endpoint working
+12. Create helper function file for learnings
+    - Get a GET endpoint working
+    - Get a POST endpoint working

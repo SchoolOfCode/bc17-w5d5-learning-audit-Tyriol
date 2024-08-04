@@ -23,18 +23,52 @@ app.use(express.json())
 
 // basic routes
 
-// get all of a specific resource
+// Modules route handlers
+// get all modules
 app.get("/api/modules/", async (req, res) => {
     const modules = await getModules();
     res.status(200).json({ status: "success", payload: modules });
 });
 
-// create a new resource
-
+// create a new module
 app.post("/api/modules/", async (req, res) => {
 
 });
 
+// update a module
+app.post("/api/modules/", async (req, res) => {
+
+});
+
+// delete a module
+app.post("/api/modules/", async (req, res) => {
+
+});
+
+
+// Learnings route handlers
+// get all learnings
+app.get("/api/modules/", async (req, res) => {
+    const modules = await getModules();
+    res.status(200).json({ status: "success", payload: modules });
+});
+
+// create a new learning
+app.post("/api/modules/", async (req, res) => {
+
+});
+
+// update a learning
+app.post("/api/modules/", async (req, res) => {
+
+});
+
+// delete a learning
+app.post("/api/modules/", async (req, res) => {
+
+});
+
+// Open up the port
 app.listen(PORT, () => {
     console.log(`We are live on port ${PORT}`);
 });
