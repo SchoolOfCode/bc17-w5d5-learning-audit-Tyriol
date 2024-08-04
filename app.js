@@ -27,7 +27,10 @@ app.use(express.json())
 // get all modules
 app.get("/api/modules/", async (req, res) => {
     const modules = await getModules();
-    res.status(200).json({ status: "success", payload: modules });
+    res.status(200).json({
+        "status": "success",
+        "payload": modules
+    });
 });
 
 // create a new module
@@ -48,7 +51,7 @@ app.post("/api/modules/", async (req, res) => {
 
 // Learnings route handlers
 // get all learnings
-app.get("/api/modules/", async (req, res) => {
+app.get("/api/learnings/", async (req, res) => {
     const modules = await getModules();
     res.status(200).json({ status: "success", payload: modules });
 });
