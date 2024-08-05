@@ -55,5 +55,10 @@
     - Get a GET endpoint working ✅
     - Get a POST endpoint working
 12. Create helper function file for learnings
-    - Get a GET endpoint working
+    - Get a GET endpoint working ✅
     - Get a POST endpoint working
+13. Link up the front end
+    - Test a connection using Modules
+    - Create a list of learnings linked to a module on the display panel
+    - Add ability to add a new module
+    - Add ability to add a new learning
