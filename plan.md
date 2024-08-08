@@ -57,6 +57,7 @@
 12. Create helper function file for learnings
     - Get a GET endpoint working ✅
     - Get a POST endpoint working
+    - Get a GET Request endpoint working that returns a module AND it's linked learnings
 13. Link up the front end
     - Test a connection using Modules
     - Create a list of learnings linked to a module on the display panel
