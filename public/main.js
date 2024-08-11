@@ -12,13 +12,11 @@ const moduleListing = document.querySelector(".module");
 const displaySection = document.querySelector(".display");
 
 async function getModules() {
-    const response = await fetch(`${URL}/api/modules`);
-    console.log(response);
-    const { payload } = await response.json();
-    console.log(payload);
-    console.log(payload[0].module_name);
-    displaySection.innerHTML = payload[0].module_name;
-
+  const response = await fetch(`${URL}/api/modules`);
+  const { payload } = await response.json();
+  payload.forEach((module) => {
+    displaySection.innerHTML = module.module_name;
+  });
 }
 
 getModules();
