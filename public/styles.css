@@ -17,9 +17,9 @@ body {
 
 .container {
     grid-template-rows: 8em 1fr;
-    height: 100dvh;
+    height: 95dvh;
     width: 80%;
-    margin: auto;
+    margin: 1.5em auto;
 }
 
 header {
@@ -28,16 +28,22 @@ header {
     align-items: center;
     font-size: 3em;
     letter-spacing: 0.1em;
+    border-top-left-radius: 0.25em;
+    border-top-right-radius: 0.25em;
 }
+
 
 main {
     background-color: darkgray;
     grid-template-columns: 0.5fr 1fr;
     padding: 2em;
+    border-bottom-left-radius: 0.75em;
+    border-bottom-right-radius: 0.75em;
 }
 
 form {
     flex-direction: column;
+    justify-content: space-around;
 }
 
 .content-input {
@@ -55,3 +61,14 @@ form {
     border-top-right-radius: 1em;
     border-bottom-right-radius: 1em;
 }
+
+.wide {
+    width: 100%;
+    padding: 2em;
+    height: 30%;
+}
+
+/* .course-module {
+    grid-template-rows: 1fr;
+    row-gap: 0.5em;
+} */
