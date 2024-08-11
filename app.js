@@ -7,6 +7,9 @@ import helmet from "helmet";
 // import helper functions for modules
 import { getModules, createModule } from "./resources/modules.js";
 
+// import helper functions for learnings
+import { getLearnings, createLearning } from "./resources/learnings.js";
+
 // create app
 const app = express();
 
@@ -63,18 +66,32 @@ app.post("/api/modules/", async (req, res) => {});
 // Learnings route handlers
 // get all learnings
 app.get("/api/learnings/", async (req, res) => {
-  const modules = await getModules();
-  res.status(200).json({ status: "success", payload: modules });
+  const learnings = await getLearnings();
+  res.status(200).json({ status: "success", payload: learnings });
 });
 
 // create a new learning
-app.post("/api/modules/", async (req, res) => {});
+app.post("/api/learnings/", async (req, res) => {
+  const data = req.body;
+  try {
+    const newLearning = await createLearning(data);
+    res.status(201).json({
+      status: "success",
+      payload: newLearning,
+    });
+  } catch (e) {
+    res.status(500).json({
+      status: "failure",
+      payload: e.message,
+    });
+  }
+});
 
 // update a learning
-app.post("/api/modules/", async (req, res) => {});
+app.post("/api/learnings/", async (req, res) => {});
 
 // delete a learning
-app.post("/api/modules/", async (req, res) => {});
+app.post("/api/learnings/", async (req, res) => {});
 
 // Open up the port
 app.listen(PORT, () => {
