@@ -15,17 +15,23 @@ export async function getModules() {
 
 // Helper function to create a new module
 export async function createModule(module) {
-  const { moduleName, description } = module;
+  const { module_name, description } = module;
   const query = `
     INSERT INTO modules (module_name, description)
     VALUES ($1, $2)
     RETURNING *;
   `;
+  const values = [module_name, description];
   try {
-    const result = pool.query(query, [moduleName, description]);
-    return result;
+    const result = await pool.query(query, values);
+    return result.rows[0];
   } catch (error) {
-    console.error("Error executing query", error.stack);
+    console.error("Error executing query:", {
+      message: error.message,
+      stack: error.stack,
+      query,
+      values,
+    });
     throw error;
   }
 }

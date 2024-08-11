@@ -49,7 +49,7 @@ app.post("/api/modules/", async (req, res) => {
   } catch (e) {
     res.status(500).json({
       status: "failure",
-      payload: e,
+      payload: e.message,
     });
   }
 });
